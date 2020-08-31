@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "758b7cc2-781f-45a8-a481-0b311d666ebb",
+		"name": "spring-cloud-microservices-hello-world-inter-microservices-communication-direct",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1-Get employee details -  Employee API Server Directly",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/employee/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"employee",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2-Get payroll details of employee -  Payroll API Server Directly",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9050/payroll/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9050",
+					"path": [
+						"payroll",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3-Get report of employee -  Report API Server Directly",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9060/report/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9060",
+					"path": [
+						"report",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4-Get employee details - via Gateway",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employee/101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5-Get payroll details of employee - via Gateway",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/payroll/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"payroll",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6-Get report details of employee - via Gateway",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/report/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"report",
+						"100"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
