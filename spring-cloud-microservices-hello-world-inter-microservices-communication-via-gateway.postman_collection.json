@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "758b7cc2-781f-45a8-a481-0b311d666ebb",
-		"name": "spring-cloud-microservices-hello-world-inter-microservices-communication-direct",
+		"name": "spring-cloud-microservices-hello-world-inter-microservices-communication-via-gateway",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
