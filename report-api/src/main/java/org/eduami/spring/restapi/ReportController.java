@@ -21,7 +21,6 @@ public class ReportController {
 
     @RequestMapping(value = "/report/{employeeId}", method = RequestMethod.GET)
     public Employee getEmployeeDetails(@PathVariable int employeeId) {
-        logger.info(String.format("Getting Details of Employee with id %s", employeeId));
         logger.info(String.format("Getting Complete Details of Employee with id %s", employeeId));
         //Get employee name from employee-api
         Employee responseEmployeeNameDetails = restTemplate.getForEntity("http://gateway/employee/" + employeeId, Employee.class).getBody();
